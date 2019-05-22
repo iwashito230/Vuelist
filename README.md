@@ -4,7 +4,7 @@
 
 GithubPagesで見れるようにする
 
-> https://github.com/iwashito230/Vue-todoapp
+> https://iwashito230.github.io/Vuelist/
 
 > [参考先1](https://qiita.com/tackeyy/items/3b180b3a835dbcb39820)
 > [参考先2](https://qiita.com/msrks/items/67dbfba84bc635d7337c)
