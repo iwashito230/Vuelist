@@ -1,0 +1,30 @@
+body {
+  background: rgba(230, 192, 192, 0.4);
+}
+.appli-title, .tasks {
+  text-align: center;
+}
+.appli-title {
+  height: 80px;
+  margin-bottom: 50px;
+}
+.appli-title h1 {
+  margin: 20px 0;
+  font-size: 4.5rem;
+}
+
+header, h1 {
+  font-family: 'Caveat', cursive;
+  color: #432f2f;
+}
+/*ボタンの背景色を追加*/
+
+.ui.green.button {
+  background-color: rgba(10, 198, 110, 0.2)!important;
+  }
+.ui.basic.red.button {
+  background-color: rgba(241, 22, 17, 0.2)!important;
+}
+.basic.blue.button {
+  background-color: rgba(30, 146, 239, 0.2)!important;
+}
