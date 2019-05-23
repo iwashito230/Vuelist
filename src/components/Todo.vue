@@ -45,22 +45,22 @@
 <script>
   export default {
     props: ['todo'],
-    data() {
+    data () {
       return {
         isEditing: false
       }
     },
     methods: {
-      completeTodo(todo) {
-        this.$emit('complete-todo', todo);
+      completeTodo (todo) {
+        this.$emit('complete-todo', todo)
       },
-      deleteTodo(todo) {
-        this.$emit('delete-todo', todo);
+      deleteTodo (todo) {
+        this.$emit('delete-todo', todo)
       },
-      showForm() {
+      showForm () {
         this.isEditing = true
       },
-      hideForm() {
+      hideForm () {
         this.isEditing = false
       }
     }

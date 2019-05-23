@@ -30,21 +30,21 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       titleText: '',
       projectText: '',
-      isCreating: false,
+      isCreating: false
     }
   },
   methods: {
-    openForm() {
+    openForm () {
       this.isCreating = true
     },
-    closeForm() {
+    closeForm () {
       this.isCreating = false
     },
-    sendForm() {
+    sendForm () {
       this.isCreating = false
 
       if (this.titleText.length === 0 || this.projectText.length === 0) return
@@ -54,12 +54,12 @@ export default {
       this.$emit('create-todo', {
         title,
         project,
-        done: false,
+        done: false
       })
       this.titleText = ''
       this.projectText = ''
       this.isCreating = false
-    },
-  },
+    }
+  }
 }
 </script>
