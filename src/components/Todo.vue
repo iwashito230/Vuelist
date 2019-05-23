@@ -43,26 +43,26 @@
 </template>
 
 <script>
-  export default {
-    props: ['todo'],
-    data() {
-      return {
-        isEditing: false
-      }
+export default {
+  props: ['todo'],
+  data () {
+    return {
+      isEditing: false
+    }
+  },
+  methods: {
+    completeTodo (todo) {
+      this.$emit('complete-todo', todo)
     },
-    methods: {
-      completeTodo(todo) {
-        this.$emit('complete-todo', todo);
-      },
-      deleteTodo(todo) {
-        this.$emit('delete-todo', todo);
-      },
-      showForm() {
-        this.isEditing = true
-      },
-      hideForm() {
-        this.isEditing = false
-      }
+    deleteTodo (todo) {
+      this.$emit('delete-todo', todo)
+    },
+    showForm () {
+      this.isEditing = true
+    },
+    hideForm () {
+      this.isEditing = false
     }
   }
+}
 </script>
