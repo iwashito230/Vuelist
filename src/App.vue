@@ -3,7 +3,6 @@
     <div class="appli-title"><h1>VueList</h1></div>
     <todo-list v-bind:todos="todos"></todo-list>
     <create-todo v-on:create-todo="createTodo"></create-todo>
-    <router-view/>
   </div>
 </template>
 
