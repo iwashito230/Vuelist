@@ -2,7 +2,7 @@
   <div>
     <p class="tasks">完了したタスク: {{ todos.filter(todo => { return todo.done === true }).length }}</p>
     <p class="tasks">未完了のタスク: {{ todos.filter(todo => { return todo.done === false }).length}}</p>
-    <todo @delete-todo="deleteTodo" @complete-todo="completeTodo" v-for="todo in todos" :todo="todo"></todo>
+    <todo @delete-todo="deleteTodo" @complete-todo="completeTodo" v-for="todo in todos" :key="todo.id" :todo="todo"></todo>
   </div>
 </template>
 
