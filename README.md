@@ -1,4 +1,4 @@
-# todolist
+# Vuelist
 
 > Vue-cliを使ってtodoappliを作る
 
