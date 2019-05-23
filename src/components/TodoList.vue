@@ -20,17 +20,17 @@ export default {
       swal({
         title: '削除しますか?',
         text: 'このTodoを完全に削除します!',
-	      icon: 'warning',
-	      buttons: true,
-	      dangerMode: true
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true
       })
-      .then((willDelete) => {
-        if (willDelete) {
-	        const todoIndex = this.todos.indexOf(todo)
-	        this.todos.splice(todoIndex, 1)
-	        swal('Delete!', '削除しました', 'success')
-	      }
-	    })
+        .then((willDelete) => {
+          if (willDelete) {
+            const todoIndex = this.todos.indexOf(todo)
+            this.todos.splice(todoIndex, 1)
+            swal('Delete!', '削除しました', 'success')
+          }
+        })
     },
     completeTodo (todo) {
       const todoIndex = this.todos.indexOf(todo)
