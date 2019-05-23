@@ -16,31 +16,31 @@ export default {
   name: 'App',
   components: {
     TodoList,
-    CreateTodo,
+    CreateTodo
   },
-  data() {
+  data () {
     return {
       todos: [{
         title: 'Todo',
         project: '詳細',
-        done: false,
+        done: false
       }, {
         title: 'Todo',
         project: '詳細',
-        done: false,
+        done: false
       }, {
         title: 'Todo',
         project: '詳細',
-        done: false,
+        done: false
       }, {
         title: 'Todo',
         project: '詳細',
-        done: false,
-      }],
+        done: false
+      }]
     }
   },
   methods: {
-    createTodo(newTodo) {
+    createTodo (newTodo) {
       this.todos.push(newTodo)
       swal('Success!', '完了!', 'success')
     }
